@@ -1,0 +1,31 @@
+- model: Todo
+  rows:
+    - title: Example ToDo
+      summary: Here is a first todo used for testing
+      content: Some long winded content in markdown
+      complete: true
+    - title: Something important
+      summary: Something terribly important that you must do
+      content: Do not forget to tell your mother you appreciate her on mothers day
+      complete: false
+- model: User
+  rows:
+    - username: tester
+      # PW = development
+      password: '$argon2id$v=19$m=64,t=3,p=2$jheik8jwVAC3DHFDgGCvSnQyKoj1G3NqWkJnU0FQqc0$ZMUqPogktAdp7CcWyIYrzu3rcCKySZmuySV84Nl8SKI'
+      roles:
+          - REGULAR
+      status: ACTIVE
+    - username: admin
+      # PW = development
+      password: '$argon2id$v=19$m=64,t=3,p=2$jheik8jwVAC3DHFDgGCvSnQyKoj1G3NqWkJnU0FQqc0$ZMUqPogktAdp7CcWyIYrzu3rcCKySZmuySV84Nl8SKI'
+      roles:
+        - REGULAR
+        - ADMIN
+      status: ACTIVE
+    - username: freeze
+      # PW = development
+      password: '$argon2id$v=19$m=64,t=3,p=2$jheik8jwVAC3DHFDgGCvSnQyKoj1G3NqWkJnU0FQqc0$ZMUqPogktAdp7CcWyIYrzu3rcCKySZmuySV84Nl8SKI'
+      roles:
+        - REGULAR
+      status: FROZEN
